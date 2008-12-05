@@ -1,0 +1,14 @@
+#masthead
+  = link_to('Wiki.Cullect.com', root_url)
+  
+  - if @page
+    \/
+    = link_to(@page.title.gsub('_', ' '), page_base_url(:page_title => @page.title))
+  
+  #description Know Everything About Cullect.com
+
+#header
+  %ul.topnav
+    %li.navitem= link_to('Home Page', root_url) 
+    %li.navitem= link_to('All Pages', pages_path)
+    %li.navitem= link_to('All Revisions', revisions_path)

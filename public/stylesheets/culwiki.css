@@ -1,0 +1,764 @@
+body {
+	background: 	#FFF;
+	color: 				#333;
+	margin:				0;
+	padding:			0;
+	font-family:	Helvetica, Verdana, Arial, sans-serif;
+	height:				100%; 
+}
+
+hr {
+	height: 			2px;
+	margin:				0;
+	width: 				100%;
+	background-color: #FFF;
+	border-style: none;
+}
+
+label {
+	font-weight: bold;
+}
+
+#wrap {
+	margin-top:			0;
+	margin-right:		auto;	
+	margin-left:		auto;
+}
+
+
+#main {
+	padding-left:  20px;
+	height:		   	100%;
+}
+
+#header {
+	margin:					5px;
+	padding:				0;
+	background:			#FFF;
+	border-bottom:	1px #999 dotted;
+	height:					50px;
+}
+
+#masthead {
+	padding:			12px 0 0 10px;
+	font-weight:	bold;
+	color:				#888;
+	z-index:			0;
+	float:				left;
+}
+
+#description {
+	padding:		2px 2px;
+	font-size:  11px;
+	font-weight: normal;
+	
+}
+
+#plotlist {
+	background-color: #FFF;
+	padding:	5px;	
+  position: absolute;
+  top: 1px;
+  right: 64px;
+  width: 150px;
+	height: 300px;
+	overflow: auto;
+  color: #000;
+  z-index: 500;
+	border-left: #888 1px solid;
+	border-right: #888 1px solid;
+	border-bottom: #888 1px solid;		
+}
+
+.plotlistitem {
+	padding: 5px;
+	margin:	 5px;
+}
+
+.plotlistitemtitle {
+	font-weight: bold;
+	font-size: 13px;
+	display:block;
+}
+
+.plotlistitemdescription {
+	display: block;
+	color: #888;
+}
+
+.plotlistitemselected {
+	display: block;
+}
+
+.plotlistitemcreate {
+	font-weight: bold;
+	font-size: 13px;
+	display:block;
+	text-align: center;
+	border-top: 1px #888 dotted;
+	padding-top: 4px;
+}
+
+#plotlisting a:hover;{
+	background-color: #FFF;
+}
+
+.topnav {
+	padding:		0;
+	margin:			0;
+	list-style:	none;
+	font-size:	11px;
+	float:			right;
+}
+
+.topnav li {
+	display:		inline;
+	margin:			3px;
+	padding:		3px;
+	color:			#666;
+}
+
+#bottomnav {
+	float:			left;
+	padding:		0;
+	margin:			0;
+	list-style:	none;
+}
+
+#bottomnav li {
+	float:			left;
+	margin:			0;
+	padding:		5px 10px;
+	font-size:	11px;
+	color:			#666;
+}
+
+
+.here {
+	background:		#fff;
+	font-weight: 	bold;
+	color:				#333;
+}
+
+.created-by {
+	font-weight: 	bold;
+}
+
+.inactive {
+	font-style: italic;
+	color:			#666;
+}
+
+#topnav a, #bottomnav a {
+	font-size: 11px;
+	text-decoration:none;
+	font-weight:	normal;
+	margin:			0;
+}
+
+#topnav a:hover, #bottomnav a:hover {
+	text-decoration:  	none;
+}
+
+#plot-list {
+	margin: 		0;
+	padding:		0;
+	background-color:	#fff;
+}
+
+#plot-list ul {
+	list-style: 	none;
+	width: 			150px;
+}
+
+#plot-list ul li {
+	position: relative;	
+	border-bottom: 1px solid #ccc
+}
+
+#plot-list ul li:hover {	
+	background: 	#FFFFCC;
+}
+
+.nav {
+	padding:		  2px;	
+}
+
+.nav-selected a {
+	font-weight: bold;
+	background-color: #FFF;
+	padding:		  2px;
+}
+
+img {
+	border:  			0;
+}
+
+a {
+	color: 				#333ccc;
+	text-decoration:  	none;
+}
+
+a:hover {
+	text-decoration:  underline;
+}
+
+#itemlist {
+	padding-left:		 60px;
+}
+
+.itemlistnav {
+	padding:			10px;
+	margin:				20px;
+}
+
+
+.item {
+	border-bottom:		6px #FFF solid;
+	background-color:	#F5F5F5;
+	color:	#444;	
+}
+
+.item.selected {
+	background-color:	#FFF;	
+	color:						#333;
+	border:						1px #888 solid;	
+}
+
+.title {
+	width:					85%;
+	line-height:  	20px;
+	padding: 				5px 20px 0 10px;
+	margin:					0;
+	font-size:			14px;
+	font-weight:  	bold;
+}
+
+.linkitem {
+	border-left: 2px #888 solid;
+	padding-left: 4px;
+}
+
+.linkitemtitle {
+	font-weight: bold;
+}
+
+.image	{
+	float:			left;
+	margin:			3px 6px 3px 0;
+}
+
+.permalink {
+	font-size:		11px;
+	font-color:		#EEE;
+	font-weight:	normal;
+	padding:			0 5px 0 0;
+}
+
+.meta {
+	clear:					both;
+	font-size:			11px;
+	font-weight:		normal;
+	margin:					0;
+	padding: 				0 0 20px 0;
+	color:					#888;
+}
+
+.inner-content {
+	display: block;
+	margin: 0 0 0 5px;
+	font-size: 13px;
+}
+
+.utilities, .published, .controls {
+	clear: 						both;	
+	color:						#888;
+	font-size:				11px;
+	font-weight:			normal;
+	margin: 					0;
+	padding: 					0;
+	line-height:			150%;	
+}
+
+.controls {
+	border-top: 			1px #999 dotted;
+	padding: 3px 3px 0 3px;
+	margin: 5px;
+}
+
+
+#backlinks {
+	margin:				  10px  0 0 0;
+	padding:				10px;
+	background:			#EEE;
+}
+
+.feed {
+	border-bottom:		1px #888 solid;
+}
+
+.feed-image {
+	display: block;
+}
+
+.title-feed {
+	width:					85%;	
+	font-size:			14px;
+	font-weight:  	bold;
+	line-height:  	30px;
+	padding: 				5px 20px 5px 10px;
+	margin:					0;
+}
+
+.feed-title {
+	font-size:			10px;		
+	font-weight:  		bold;
+	color: 				#888;
+	line-height:  		15px;
+	padding:	 		2px 0 2px 0;
+	overflow:			hidden;
+}
+
+.feed-title a {
+	color: 				#000;
+}
+
+.feed-title a:hover, .title-feed a:hover {
+	text-decoration: 	none;
+	background: 			#fff;
+}
+
+.feed-title:hover, .feed-title-open:hover {
+	text-decoration:	none;
+	background: 			#fff;
+}
+
+
+.feed-detail {
+	font-size:			14px;	
+	padding:				0px 5px 0px 15px;
+	margin:					0;
+}
+
+#feed-titles {
+	height:	  			50%;
+	width:					100%;
+	overflow: 			scroll;
+}
+
+.ago {
+	font-size:  		9px;
+	font-weight: 		normal;
+	float:  			right;
+	width:				15%;
+}
+
+.detail {
+	margin: 			0;
+	padding: 			0;
+	width:				90%;
+}
+
+.content {
+	width:						80%;
+	padding:					0;
+	margin:						0;
+	font-family:			Helvetica, Arial, Verdana, sans-serif;
+	font-size:				16px;
+}
+
+.tag {
+	padding:  			3px;
+	font-size:			11px;
+
+	font-weight:		normal;
+	float:					right ;
+}
+
+.tag:hover {
+	padding:  			3px;
+}
+
+#tags {
+	border-top:  		1px #CCC dotted;
+}
+
+#tags h2 {
+	font-size:  			13px;
+	text-transform:  	uppercase;
+	font-weight: 			bold;
+	line-height:  		13px;
+}
+
+
+h1 {
+	font-size:			24px;
+	line-height:		150%;
+	font-family: 		Helvetica, Arial, Verdana, sans-serif;	
+	color: 					#888;
+	font-weight: 		bold;
+	border: 				0px;
+	margin: 				0 0 0 0px;
+}
+
+h2 {
+  font-size: 			110%;
+	font-family:		Helvetica, Arial, Verdana, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+	color: 					#444;
+	font-weight: 		bold;
+	padding:				0;
+	margin:					0;
+}
+
+
+h3	{
+	font-size: 			11px;
+	font-family:		Helvetica, Arial, Verdana, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+	line-height: 		10px;
+	color: 					#666;
+	font-weight: 		bold;
+	margin:					0px 20px 10px 10px;
+}
+
+
+.date {
+	margin-left: 		-110px;
+	padding-bottom: 	2px;
+	color: 				#666;
+	font-family:  		helvetica, Arial, Verdana, sans-serif;
+	font-size: 			small;
+	font-weight: 		400;
+}
+	
+.footer {
+	clear: 					both;
+	background: 		#EEE;
+	color: 					#666;
+	text-align: 		left;
+	border-top: 		1px #888 solid;
+	width:					100%;
+	padding:				0;
+	margin:					0;
+}
+
+	
+#menu {
+	background-color:	#E3E3E3;
+	float: 						left;
+	width: 						180px;
+	padding:					0;
+	margin-top:				0px;
+	position:					fixed;
+	left:							0px;
+	top:							51px;
+	height:						100%;
+	overflow:					auto;
+}
+
+.menuitem, .menuitemshortcuts {
+	padding: 					5px 5px 5px 10px;
+	margin:						0;
+}
+
+.menuitem:hover {
+	background-color: #F9F6BA;
+}
+
+.menuitem a:hover {
+	background-color: #F9F6BA;
+	text-decoration: none;
+}
+
+.menuitem.selected a:hover {
+  background-color: #FFF;
+}
+
+.menuitem.selected, #tag-details ul li.selected {
+	background-color: #F5F5F5;
+	font-weight:			bold;
+	margin:						0;
+}
+
+#tag-details ul li {
+	font-weight:			normal;
+}
+
+.shorcutrow {
+	text-align: center;
+	vertical-align: top;
+}
+
+#feeds-add, #editors-add, #message-add, #plot-options-detail  {
+	margin-left: 20px;
+	background-color:#fff;
+	padding: 8px;
+}
+
+.highlight {
+  background-color: #F9F6BA;
+	padding: 					0 3px;
+	margin:						0;
+}
+
+
+#add_feed_form {
+	background-color:  	#EEE;
+	padding:  			5px;
+	width:  			75%;
+}
+
+#formats {
+	border-top: 		1px #CCC dotted;
+	border-bottom: 		1px #CCC dotted;
+	line-height:  		16px;
+}
+
+
+.formattype {
+	padding:  			3px;
+	border-bottom:  	1px #CCC dotted;
+}
+
+.formattype:hover {
+	background-color:	#ECFEC0;	
+}
+
+#accountoptions ul,  #accountoptions li {
+	display: inline;
+}
+
+.feedflare, h6 {
+    display: none;
+}
+
+
+/* importopml_form */
+#import_opml_form
+{
+    clear: both;
+    width: 585px;
+    padding: 0 23px;
+}
+
+.inplaceeditor-form input[type="text"]
+{
+  width: 150px;
+  font-size: 1.0em;
+  background: #fff; 
+  margin:		0 0 10px 0;
+}
+
+.input_text
+{
+    width: 450px;
+    font-size: 1.7em;
+    margin:		10px;
+}
+
+.login_field
+{
+    width: 150px;
+    font-size: 1.0em;
+    color: #393939;
+    background: #fff; 
+    margin:		0;
+		padding:  0;
+}
+
+#import_opml_form.searching .input_text
+{
+    color: #E57A66;
+    background: #fff !important;
+}
+
+.submit_tag
+{
+    font-size: 2.1em;
+    color: #393939;
+}
+
+small {
+  font-size: 11px;
+  font-weight: normal;
+  color: #444;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+table.subscription, table.accounts {
+	color: #000;
+	border-collapse: separate;
+	font-size:			small;
+}
+
+table.subscription th, table.accounts th {
+	padding: 5px;
+	text-align: center;	
+	width: 103px;	
+}
+
+table.subscription th.feature {
+	text-align: left;
+}
+
+table.subscription th.empty, table.accounts th.empty  {
+	background-color: transparent;
+	border: none;
+}
+
+table.accounts td {
+  vertical-align: top;
+	padding: 5px;
+	text-align: left;
+	width: 80px;
+}
+
+table.subscription td {
+  vertical-align: top;
+	padding: 5px;
+	text-align: center;
+	width: 80px;
+}
+
+table.subscription td.yes {
+	color: #000;
+  font-weight: normal;
+	text-align: center;
+}
+
+table.subscription td.no, table.accounts td.no {
+	color: #444;
+  font-weight: bold;
+	background-color: MistyRose;
+	text-align: center;
+}
+
+table.subscription, table.subscription td, table.accounts, table.accounts td {
+	border: 1px solid #FFF;
+	background-color: #FCFCFC;
+}
+
+table.subscription th, table.accounts th {
+	border: 1px solid #FFF;
+	background-color: #EFEFEF;
+}
+
+table.subscription th.highlight {
+	border: 1px solid #FFF;
+	color: #000;
+	background-color: #FFFFCC;	
+	text-align: left;
+}
+
+table.subscription td.highlight {
+	background-color: #FFFFCC;
+}
+
+/* ----------------- */
+form {  /* set width in form, not fieldset (still takes up more room w/ fieldset width */
+	font:	100% Helvetica, Verdana, Arial, sans-serif;
+	color: #888;
+  margin: 0;
+  padding: 0;
+	width: 100%;
+}
+
+form fieldset {
+  clear: both; 
+  border-color: #FFF;
+  border-style: none;
+  padding: 0;  
+  margin: 0;
+}
+
+form fieldset legend {
+	font-size:1.1em;
+	font-weight: bold;
+}
+
+form label { 
+	display: block;  /* block float the labels to left column, set a width */
+	float: left; 
+	width: 105px; 
+	padding: 0; 
+	margin: 13px 0 5px 0; /* set top margin same as form input - textarea etc. elements */
+	font-weight: normal;
+}
+
+form input {
+	margin: 10px 0 5px 0;
+}
+
+form input.boxes, form textarea {
+	width: 75%;
+	display: block;
+	margin: 5px 0 0 0; /* set margin on left of form elements rather than right of
+                              label aligns textarea better in IE */
+}
+
+form input#reset {
+	margin-left:0px; /* set margin-left back to zero on reset button (set above) */
+}
+
+form textarea { 
+	overflow: auto; 
+}
+
+form small {
+	display: block;
+	margin: 3px 0 5px 100px; /* instructions/comments left margin set to align w/ right column inputs */
+	padding: 1px 12px;
+	font-size: 88%;
+	color: #888;
+	line-height: 12px;
+}
+
+form br {
+	clear:left; /* setting clear on inputs didn't work consistently, so brs added for degrade */
+}
+
+
+#twitter-details ul, #tumblr-details ul, #weblog-details ul {
+	margin: 0;
+	padding: 0;
+  list-style: none;	
+}
+
+/* ----------------- */
+
+.notice {
+	margin: 10px;
+  padding: 10px;
+  background-color: #F9F6BA;
+	border: 1px green solid;
+	color: green;
+	width: 100%;
+}
+
+.warning, .alert {
+	margin: 10px;
+  padding: 10px;
+  background-color: #F6F9BA;
+	border: 1px red solid;
+	color: red;
+	width: 100%;
+}
+
+
+/*-------------------------------------------------
+READING LIST SWITCHER
+-------------------------------------------------*/
+
+div.plotmenu {
+  color: #000;
+  display: none;
+  z-index: 500; 
+}
+
+div.plotmenu, div.plotmenu * {
+  cursor: pointer;
+  z-index: 500; 
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>All Revisions</title>
+  <link rel="alternate" type="application/rss+xml" title="Wiki.Cullect.com / Revisions %>" href="<%= revisions_path %>.rss"/>
+  <%= javascript_include_tag :defaults %>
+  <%= stylesheet_link_tag 'culwiki' %>
+</head>
+<body>
+<%= render :partial => 'shared/header' %>
+<p style="color: green"><%= flash[:notice] %></p>
+<%= yield  %>
+<p></p>
+<%= render :partial => 'shared/footer' %>
+</body>
+</html>

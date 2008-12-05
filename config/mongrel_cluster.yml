@@ -1,0 +1,13 @@
+##########################
+# MONGREL CLUSTER CONFIG FROM PDINGLES @
+# http://forum.textdrive.com/viewtopic.php?id=15402
+##########################
+
+port: "8000"
+environment: production
+address: 127.0.0.1
+servers: 4
+cwd: /home/cullect.com/wiki/current
+pid_file: /tmp/wiki-cullect-mongrel.pid
+log_file: /home/cullect.com/wiki/shared/log/mongrel.log
+docroot: /home/cullect.com/wiki/current/public

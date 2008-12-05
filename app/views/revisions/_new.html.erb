@@ -1,0 +1,9 @@
+
+	<% form_for @revision, :url => new_revision_path, :html => {:method => :post} do |f| %>  	
+		<%= f.error_messages %>
+		<%= f.text_area :contents, :cols => 70, :rows => 30 %>
+		<%= f.hidden_field :page_id, :value => @page.id %>		
+		<%= f.hidden_field :created_by, :value => cookies[:person_id] %>
+		<br />
+    	<%= f.submit "Update" %>
+	<% end %>

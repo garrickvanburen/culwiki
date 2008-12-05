@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Wiki.Cullect.com / <%= if @page : @page.clean_title else "All Pages" end %> <%= " / Edit" if controller.action_name == 'edit' %></title>
+	
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	
+  	<link rel="alternate" type="application/rss+xml" title="Wiki.Cullect.com / <%= @page.clean_title if @page %>" href="<%= if @page : page_base_url(:page_title => @page.title) else pages_path end %>.rss"/>
+
+  	<%= javascript_include_tag :defaults %>
+	
+	<%= stylesheet_link_tag 'culwiki' %>
+	
+</head>
+<body>
+
+	<div id='wrap'>
+		<%= render :partial => 'shared/header' %>
+		<div id='main'>							
+			<div id="spacer">&nbsp;</div>
+			<div id="itemlist">
+				<div id="itemlist-0">
+					<% if flash[:notice] %><p class="notice"><%= flash[:notice] %></p><% end %>
+					<% if flash[:warning] %><p class="alert"><%= flash[:warning] %></p><% end %>			
+					<%= yield  %>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+		</div>
+		<%= render :partial => 'shared/footer' %>
+	</div>
+	
+</body>
+</html>

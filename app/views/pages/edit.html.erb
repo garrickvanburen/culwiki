@@ -1,0 +1,9 @@
+<h1>Update "<%= @page.title.gsub('_', ' ') %>"</h1>
+
+<%= render :partial => 'revisions/new' %>
+
+<% if @page.has_revisions? %>
+<%= link_to 'Cancel', page_base_url(:page_title => @page.title) %>
+<% end %>
+	
+

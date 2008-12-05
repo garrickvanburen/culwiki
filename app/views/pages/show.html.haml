@@ -1,0 +1,15 @@
+.content
+  %h1= @page.title.gsub('_', ' ')
+  .meta
+    - if cookies[:person_id]
+      .highlight= link_to('Edit', page_edit_path(:page_title => @page.title))
+    = link_to('History', page_history_path(:page_title => @page.title))
+    = "Last Updated #{time_ago_in_words(@page.revisions.last.created_on)} ago by #{Person.find_by_cullect_id(@page.revisions.last.created_by).name}"
+    
+  = auto_link(@page.revisions.last.parsed_contents)
+
+  - if @page.has_linkages?
+    #backlinks
+      %strong + This Page is Referenced By:
+      = list_of(@page.linkages) do |i|
+        = link_to(i.title.gsub('_', ' ').downcase, page_base_url(:page_title => i.title))

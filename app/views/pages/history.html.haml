@@ -1,0 +1,8 @@
+%h1= "#{@page.title.gsub('_', ' ')}  History"
+
+= list_of(@revisions) do |revision|
+  %a{:href => "#", :onclick => "Element.toggle('rev-#{revision.id}')"}
+    = "+ #{revision.created_on} (#{time_ago_in_words(revision.created_on)} ago) by #{Person.find_by_cullect_id(revision.created_by).name}"
+  %div{:id => "rev-#{revision.id}", :style => "display:none;background-color:#F8F8F8;padding:6px;margin:6px;"} 
+    %p= auto_link(revision.parsed_contents)
+= link_to 'Back', page_base_path(:page_title => @page.title)
